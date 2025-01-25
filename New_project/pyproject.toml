@@ -1,17 +1,18 @@
 [tool.poetry]
 name = "New_project"
 version = "0.1.0"
-description = ""
+description = "my first project with poetry"
 authors = ["Nikita Semenov <n.semenov@rambler.ru.ru>"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-pytest = "==8.3.4"
-selene = "==2.0.0rc9"
+python = ">=3.12"
+selene = "2.0.0rc9"
+pytest = "8.2.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.dev-dependencies]
 pylint = "^3.3.3"
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
